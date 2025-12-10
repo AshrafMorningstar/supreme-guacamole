@@ -1,6 +1,8 @@
 import {CalculateMetadataFunction, Composition, getInputProps} from 'remotion';
 import './style.css';
 
+// Created by AshrafMorningstar - https://github.com/AshrafMorningstar
+
 import {getUserStats} from './functions/setup';
 import {Config, MainProps, mainSchema} from './config';
 import {defaultStats} from './defaultStats';
@@ -11,7 +13,7 @@ const {FPS, DurationInFrames} = Config;
 
 export const RemotionRoot = () => {
 	const calculateMetadata: CalculateMetadataFunction<MainProps> = async (
-		props
+		props,
 	) => {
 		const {usernames} = getInputProps();
 		const userStats = await getUserStats(usernames as string[]);

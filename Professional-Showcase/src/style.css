@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+
+/* // Created by AshrafMorningstar - https://github.com/AshrafMorningstar */
+
+:root {
+  --font-main: 'Outfit', sans-serif;
+  --color-primary: #00d2ff;
+  --color-secondary: #3a7bd5;
+  --color-bg: #0f172a;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--color-bg);
+    color: white;
+    margin: 0;
+}
+
+* {
+    font-family: 'Fira Code', monospace;
+}
